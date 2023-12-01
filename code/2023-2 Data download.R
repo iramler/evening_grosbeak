@@ -10,11 +10,13 @@ library(RSQLite)
 # ensure that you are always working in GMT)
 Sys.setenv(TZ = "UTC")
 
-setwd("C:/Users/degrootel/Documents/Motus/R files/Collision Motus/")
+# getwd()
+## gb - set working directory
+setwd("/Users/gracebridge/repos/evening_grosbeak")
 
-sql.motus <- tagme(35, new = FALSE, update = TRUE, dir = "./data/") ## update data
-degrootel
-Griseus1
+sql.motus <- tagme(35, new = FALSE, update = TRUE) ## update data
+# degrootel
+# Griseus1
 
 #metadata(sql.motus, projectIDs = 35)  ## tag FALSE tag metadata
 
